@@ -1,0 +1,29 @@
+$EXsmall: 360px
+$small: 540px
+$smallmedium: 767px
+$medium: 991px
+$large: 1280px
+$EXlarge: 1600px
+
+@mixin respond-to($media)
+  @if $media == XXXS 
+    @media only screen and (max-width: $EXsmall)
+      @content 
+  @else if $media == XXS 
+    @media only screen and (min-width: $EXsmall) and (max-width: $small)
+      @content 
+  @else if $media == XS 
+    @media only screen and (min-width: $small) and (max-width: $smallmedium)
+      @content
+  @else if $media == SM 
+    @media only screen and (min-width: $smallmedium) and (max-width: $medium)
+      @content
+  @else if $media == EM 
+    @media only screen and (min-width: $medium) and (max-width: $large)
+      @content    
+  @else if $media == LG 
+    @media only screen and (min-width: $large) and (max-width: $EXlarge)
+      @content
+  @else if $media == XLG 
+    @media only screen and (min-width: $EXlarge)
+      @content

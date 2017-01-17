@@ -1,0 +1,1557 @@
+//     POP UP FORM MAIN PATH
+//
+//     TOP PANEL
+//     HEADER
+//     SECTION 1  
+
+// @import "_mixins.sass" 
+@import "media.sass" 
+*	
+	//user-select: none
+	margin: 0
+	padding: 0
+	// @include font-face("Comfortaa", "../font/Comfortaa");
+	font-family: 'Comfortaa', cursive
+.body
+	position: relative
+.container_top
+	max-width: 1200px
+	margin: 0 auto
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+.container
+	display: flex
+	max-width: 960px
+	margin: 0 auto
+.row
+	flex-direction: row
+	@include respond-to(XS)
+		flex-direction: column
+	@include respond-to(XXS)
+		flex-direction: column
+	@include respond-to(XXXS)
+		flex-direction: column
+.column
+	flex-direction: column
+#top_movie
+	max-width: 1900px
+	margin: 0 auto
+// ---------------------- POP UP FORM MAIN PATH ------------------------	
+
+//--------------------------- FORMA ---------------
+.form
+	input
+		width: 100% !important
+		height: 30px !important 
+		margin: 0 0 2% !important 
+		border: 2px solid #000 !important
+		border-radius: 5px !important 
+		text-align: center !important 
+	button
+		color: #fff !important
+		margin: 0 0 2% !important
+		width: 200px !important
+		height: 50px !important
+		border-radius: 10px !important
+		background-color: rgb(232,49,43) !important
+
+//------------------------------FORMA END -------------
+.politicbutton
+	p
+		text-decoration: underline
+		cursor: pointer
+		&:hover
+			color: blue
+#sucwindow
+	width: 700px
+	position: fixed
+	top: 15%
+	left: 50%
+	margin-left: -350px
+	z-index: 11
+	background: rgba(0,0,0,0.9)
+	display: none
+	padding: 0
+	color: #fff
+	text-align: center
+	@include respond-to(SM)
+		left: 0
+		margin-left: 5%
+		width: 90%
+		top: 15%
+	@include respond-to(XS)
+		width: 100%
+		left: 0
+		top: 15%
+		margin-left: 0
+	@include respond-to(XXS)
+		width: 100%
+		left: 0
+		top: 0
+		margin-left: 0
+		padding: 20px 0
+		font-size: 0.8em
+	@include respond-to(XXXS)
+		width: 100%
+		left: 0
+		top: 0
+		margin-left: 0
+		padding: 20px 0
+		font-size: 0.7em	
+.politicwind
+	width: 700px
+	position: fixed
+	top: 15%
+	left: 50%
+	margin-left: -350px
+	z-index: 11
+	background: rgba(0,0,0,0.9)
+	display: none
+	padding: 0
+	color: #fff
+	text-align: center
+	@include respond-to(SM)
+		left: 0
+		margin-left: 5%
+		width: 90%
+		top: 15%
+	@include respond-to(XS)
+		width: 100%
+		left: 0
+		top: 15%
+		margin-left: 0
+	@include respond-to(XXS)
+		width: 100%
+		left: 0
+		top: 0
+		margin-left: 0
+		padding: 20px 0
+		font-size: 0.8em
+	@include respond-to(XXXS)
+		width: 100%
+		left: 0
+		top: 0
+		margin-left: 0
+		padding: 20px 0
+		font-size: 0.7em
+.popwindow
+	width: 700px
+	position: fixed
+	top: 15%
+	left: 50%
+	margin-left: -350px
+	z-index: 11
+	background: rgba(121,121,121,0.8)
+	display: none
+	padding: 20px
+	color: #fff
+	@include respond-to(SM)
+		left: 0
+		margin-left: 2%
+		width: 90%
+	@include respond-to(XS)
+		width: 100%
+		left: 0
+		margin-left: 0
+	@include respond-to(XXS)
+		width: 100%
+		left: 0
+		margin-left: 0
+		padding: 20px 0
+	@include respond-to(XXXS)
+		width: 100%
+		left: 0
+		margin-left: 0
+		padding: 20px 0
+.box_window_in 
+	//position: relative
+	overflow-y: auto
+	// text-align: center
+	img
+		position: absolute
+		top: 0
+		left: 0
+		@include respond-to(SM)
+			display: none
+		@include respond-to(XS)
+			display: none
+		@include respond-to(XXS)
+			display: none
+		@include respond-to(XXXS)
+			display: none
+	.pos_right	
+		margin: 6% 0
+		float: right
+		width: 50%
+		text-align: center
+		@include respond-to(SM)
+			float: none
+			width: 50%
+			margin: 0 auto
+		@include respond-to(XS)
+			float: none
+			width: 50%
+			margin: 0 auto
+		@include respond-to(XXS)
+			float: none
+			width: 70%
+			margin: 0 auto
+		@include respond-to(XXXS)
+			float: none
+			width: 100%
+			margin: 0 auto
+.mask
+	position: fixed
+	background: rgba(0, 0, 0, 0.6)
+	display: none
+	height: 100%
+	width: 100%
+	z-index: 10
+
+.to_blur.blur
+	-webkit-filter: blur(5px)
+	-moz-filter: blur(5px)
+	-o-filter: blur(5px)
+	-ms-filter: blur(5px)
+	filter: blur(5px)
+// ---------------------- POP UP FORM MAIN PATH END ------------------------	
+
+//--------------------- DISCOUNT LINE -------------------------
+.text_tape
+	max-width: 1900px
+	height: 40px
+	color: #fff
+	margin: 0 auto
+	overflow: hidden
+	@include respond-to(SM)
+		height: 30px
+	@include respond-to(XS)
+		height: 30px
+	@include respond-to(XXS)
+		height: 20px
+	@include respond-to(XXXS)
+		height: 20px
+	p
+		line-height: 40px
+		margin-left: 10px
+		@include respond-to(SM)
+			line-height: 30px
+		@include respond-to(XS)
+			line-height: 30px
+		@include respond-to(XXS)
+			line-height: 20px
+			font-size: 0.9em
+		@include respond-to(XXXS)
+			line-height: 20px
+			font-size: 0.9em
+//--------------------- DISCOUNT LINE END -------------------
+
+
+
+
+//------------------------------------ TOP PANEL -----------------	
+.top_panel
+	width: 100%
+	background-color: rgba(121,121,121,0.7)
+
+	// background-color: rgba(121,121,121,0.9)
+	position: fixed
+	z-index: 5
+	@include respond-to(SM)
+		display: none
+	@include respond-to(XS)
+		display: none
+	@include respond-to(XXS)
+		display: none
+	@include respond-to(XXXS)
+		display: none
+.logo
+	height: 62px
+	img
+		//margin: 10px 10px 0 0
+		background-color: #FFF
+		animation: 3s linear infinite
+		animation-name: blink
+@keyframes blink
+	50%
+		background-color: #F68219
+	100%
+		background-color: #218155
+.nav
+	//margin-top: 20px
+	width: 60%
+	text-align: center
+	ul
+		//padding: 5% 0
+		li
+			list-style-type: none
+			display: inline-block
+			padding: 0 10px 0 0
+			border-right: 2px solid #000
+			&:last-child
+				border: none
+			a
+				color: #000
+				// color: rgba(121,121,121,0.9)
+				font-size: 1.1em
+				text-decoration: none
+			&:hover
+				//color: #fff
+				text-decoration: underline
+.coki_link
+	
+	.coc_link
+		align-items: center
+		.icon_item
+//------------------------------------ TOP PANEL END -----------------	
+
+
+// --------------------------------------------- HEADER ------------------
+
+
+#top_movie
+	height: 100%
+	background-image: url("../img/over_video/run.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 0 0
+	background-color: #000
+	img
+		width: 20%
+		position: absolute
+		visibility: hidden
+		@include respond-to(SM)
+			visibility: visible
+		@include respond-to(XS)
+			visibility: visible
+		@include respond-to(XXS)
+			visibility: visible
+		@include respond-to(XXXS)
+			visibility: visible	
+	#movie
+		@include respond-to(SM)
+			display: none
+		@include respond-to(XS)
+			display: none
+		@include respond-to(XXS)
+			display: none
+		@include respond-to(XXXS)
+			display: none
+	@include respond-to(SM)
+		height: 500px
+	@include respond-to(XS)
+		height: 500px
+	@include respond-to(XXS)
+		height: 700px
+		background-position: top center
+		// position: absolute
+		// top: 0
+	@include respond-to(XXXS)
+		height: 550px
+		background-position: top center
+		// position: absolute
+	
+// --------------------------- POP UP IMAGE OVER VIDEO ----------------------------
+.over_video
+	//display: none
+	position: absolute
+	top: 10%
+	width: 100%
+	left: 0
+	@include respond-to(SM)
+		top: 0
+		// position: relative
+	@include respond-to(XS)
+		top: 0
+		// position: relative	
+	@include respond-to(XXS)
+		top: 0
+		// position: relative
+	@include respond-to(XXXS)
+		top: 0
+		// position: relative
+	
+	.slogan_min
+		position: absolute
+		visibility: hidden
+		color: #fff
+		font-size: 2em
+		right: 10%
+		@include respond-to(SM)
+			visibility: visible
+		@include respond-to(XS)
+			visibility: visible	
+			right: 0
+		@include respond-to(XXS)
+			visibility: visible
+			position: relative
+			text-align: center
+			right: 0
+			font-size: 1.5em
+		@include respond-to(XXXS)
+			visibility: visible
+			position: relative
+			right: 0
+			text-align: right
+			font-size: 1.5em
+	.ovi_slogan
+		text-align: center
+		visibility: hidden
+		font-size: 2.3em
+		color: #fff
+		position: absolute
+		width: 100%
+		animation: 3s linear
+		animation-name: text_up
+		animation-fill-mode: both
+		@include respond-to(EM)
+			font-size: 2em
+			color: #fff
+		@include respond-to(SM)
+			font-size: 1.8em
+			display: none
+		@include respond-to(XS)
+			display: none
+			font-size: 1.7em
+			width: 60%
+			position: absolute
+			right: 0
+		@include respond-to(XXS)
+			display: none
+		@include respond-to(XXXS)
+			display: none
+	img
+		width: 30%
+		visibility: hidden
+		position: absolute
+		top: 10%
+		left: 20%
+		animation: 2s 
+		animation-name: movewatch
+		animation-fill-mode: both
+		@include respond-to(LG)
+			width: 28%
+		@include respond-to(EM)
+			width: 28%
+		@include respond-to(SM)
+			width: 35%
+			left: 10%
+		@include respond-to(XS)
+			width: 50%
+			left: -2%
+		@include respond-to(XXS)
+			width: 70%
+			left: 14%
+			position: relative
+		@include respond-to(XXXS)
+			width: 70%
+			position: relative
+	.ovi_box
+		position: relative
+		width: 50%
+		float: right
+		text-shadow: #000 0 0 10px 
+		@include respond-to(XXS)
+			width: 100%
+			float: none
+		@include respond-to(XXXS)
+			width: 100%
+			float: none
+		.ovi_text
+			position: relative
+			height: 400px
+			width: 100%
+			float: left
+			color: #fff
+			@include respond-to(XXS)
+				float: none
+				width: 100%
+				height: 200px
+			@include respond-to(XXXS)
+				float: none
+				width: 100%
+				height: 200px
+			.price_old
+				position: absolute
+				visibility: hidden
+				animation: 12s linear
+				animation-name: up
+				animation-fill-mode: both
+				top: 20%
+				font-size: 2em
+				@include respond-to(SM)
+					top: 30%
+				@include respond-to(XS)
+					top: 30%
+				@include respond-to(XXS)
+					top: 0
+					// right: 
+					left: 50%
+					margin-left: -85px
+					font-size: 4em
+				@include respond-to(XXXS)
+					top: 0
+					// right: 0
+					left: 50%
+					margin-left: -65px
+					font-size: 3em
+				
+			.price
+				position: absolute
+				color: #fff
+				animation: 12s linear 
+				animation-name: move
+				animation-fill-mode: both
+				top: 20%
+				font-size: 6em
+				@include respond-to(XS)
+					font-size: 5em
+				@include respond-to(XXS)
+					top: 0
+					// right: 
+					left: 50%
+					margin-left: -85px
+					font-size: 4em
+				@include respond-to(XXXS)
+					top: 0
+					// right: 0
+					left: 50%
+					margin-left: -65px
+					font-size: 3em
+			.popUp_button
+				visibility: hidden
+				position: absolute
+				top: 70%
+				left: 0
+				background-color: #5d7e32
+				animation: 12s linear 
+				animation-name: emergence
+				animation-fill-mode: both
+				border-radius: 300px
+				padding: 120px 30px
+				font-size: 3em
+				color: #fff	
+				cursor: pointer
+				@include respond-to(LG)
+					padding: 100px 40px
+					font-size: 2em
+					top: 60%
+					left: 0	
+				@include respond-to(EM)
+					padding: 70px 15px
+					font-size: 2em
+					top: 55%
+					left: 0
+				@include respond-to(SM)
+					padding: 20px 30px
+					font-size: 2em
+					top: 55%
+					left: 0
+				@include respond-to(XS)
+					padding: 20px 30px
+					font-size: 2em
+					top: 55%
+					// left: 5%
+				@include respond-to(XXS)
+					padding: 20px 30px
+					font-size: 2em
+					top: 40%
+					left: 50%
+					margin-left: -110px
+				@include respond-to(XXXS)
+					padding: 20px 30px
+					font-size: 2em
+					top: 40%
+					left: 50%
+					margin-left: -110px
+				&:hover
+					background-color: #98bf65
+// --------------------------------- POP UP IMAGE OVER VIDEO END ----------
+@keyframes text_up
+	0%
+		visibility: hidden
+	50%
+		visibility: hidden
+		opacity: 0
+	51%
+		visibility: visible
+	100%
+		visibility: visible
+		opacity: 1
+
+@keyframes emergence
+	80%
+		visibility: hidden
+		opacity: 0
+	100%
+		opacity: 1
+		visibility: visible
+@keyframes movewatch
+	50%
+		visibility: hidden
+		opacity: 0
+	55%
+	 	visibility: visible
+	100%
+		opacity: 1
+		visibility: visible
+@keyframes move
+	0%
+		margin-top: -600%
+	65%
+		margin-top: -600%
+	80%
+		margin-top: 0
+	100%
+		margin-top: 0
+@keyframes up
+	50%
+		visibility: hidden
+	51%
+		visibility: visible
+	80%
+		margin-top: 0
+		font-size: 5em
+		transform: rotate(0deg)
+		-webkit-transform: rotate(0deg)
+		@include respond-to(XS)
+			font-size: 4em
+		@include respond-to(XXS)
+			font-size: 4em
+		@include respond-to(XXXS)
+			font-size: 3em
+	99%
+		margin-top: 400%
+		-webkit-transform: rotate(30deg)
+		transform: rotate(30deg)
+	100%
+		visibility: hidden
+//------------------------------------------ HEADER END -----------------
+
+//------------------------------------------ SECTION 1 ADVANTAGES -----------------------
+#advant
+	//z-index: 2
+	width: 100%
+	height: 170px
+	margin-top: -170px
+	background-color: #fff
+	position: absolute
+	font-size: 1.2em
+	@include respond-to(EM)
+		font-size: 0.9em
+		height: 100px
+		margin-top: -100px
+	@include respond-to(SM)
+		font-size: 0.7em
+		height: 80px
+		margin-top: -80px
+	@include respond-to(XS)
+		display: none
+	@include respond-to(XXS)
+		display: none
+	@include respond-to(XXXS)
+		display: none
+	.advatages_item
+		width: 25%
+		text-align: center
+		@include respond-to(SM)
+			height: 50px
+		.item1
+			width: 70%
+			background-image: url("../img/advatages/car.png")
+			background-repeat: no-repeat
+			background-size: cover
+			margin: 0 0 0 50px
+			height: 170px
+			@include respond-to(SM)
+				width: 40%
+				height: 80px
+				margin-left: 30%
+			@include respond-to(EM)
+				width: 45%
+				height: 100px
+		&:nth-child(2) .item1
+		 	background-image: url("../img/advatages/money.png")
+		&:nth-child(3) .item1
+		 	background-image: url("../img/advatages/quality.png")
+		&:nth-child(4) .item1
+		 	background-image: url("../img/advatages/date.png")
+//---------------------------------------SECTION 1 ADVANTAGES END----------------------
+
+//------------------------------------------ SECTION 2 CHARACTERISTICs -----------------------
+#DIESEL_Watch_Characteristics
+	//margin-top: 40px
+	background-image: url("../img/section1/fon.jpg")
+	background-position: top center
+	background-repeat: repeat-y
+ 	// justify-content: space-between
+ 	background-size: cover
+	max-width: 1900px
+	margin: 20px auto 0
+	@include respond-to(XS)
+		margin: 0 auto
+	@include respond-to(XXS)
+		margin: 0 auto
+	@include respond-to(XXXS)
+		margin: 0 auto
+.char_video
+	width: 50%
+	margin: 0 auto
+	@include respond-to(XS)
+		width: 80%
+	@include respond-to(XXS)
+		width: 80%
+	@include respond-to(XXXS)
+		width: 80%
+.watch_box
+	color: #fff
+	text-shadow: 0 0 3px #000
+	width: 50%
+	margin: 0 auto
+	@include respond-to(XS)
+		width: 90%
+		font-size: 0.9em
+	@include respond-to(XXS)
+		width: 90%
+		font-size: 0.8em
+	@include respond-to(XXXS)
+		width: 90%
+		font-size: 0.8em 
+	table
+		border-collapse: collapse
+		width: 100%
+		margin: 12% 0
+		@include respond-to(XS)
+			margin: 0 0 5%
+		@include respond-to(XXS)
+			margin: 0 0 5%
+		@include respond-to(XXXS)
+			margin: 0 0 5%
+		tr
+			height: 30px
+			background-color: rgb(121,121,121)
+			td 
+				padding-left: 2%
+		tr:nth-child(odd)
+			background-color: rgba(121,121,121,0.7)
+.movie
+	margin: 16% 0
+	box-shadow: 0 0 15px 5px rgb(121,121,121)
+	@include respond-to(XS)
+		margin: 5% 0
+	@include respond-to(XXS)
+		margin: 5% 0
+	@include respond-to(XXXS)
+		margin: 5% 0
+//------------------------------------------ SECTION 2 CHARACTERISTICs END -----------------------
+
+//---------------------------------------- SECTION 3 CONVICTION -------------
+#DIESEL_Brave
+	background-image: url("../img/conviction/fon.jpg")
+	background-position: top center
+	background-repeat: no-repeat
+	width: 100%
+	color: #fff
+	font-size: 1.2em
+	
+	.conv_head
+		background-image: url("../img/conviction/brave.png")
+		background-position: left center
+		background-repeat: no-repeat
+		padding: 30px 0 100px 300px
+		text-align: center
+		@include respond-to(XS)
+			display: none
+		@include respond-to(XXS)
+			display: none
+		@include respond-to(XXXS)
+			display: none
+		h1
+			font-size: 2em
+			@include respond-to(SM)
+				font-size: 1.7em
+			@include respond-to(XS)
+				font-size: 1.5em
+			@include respond-to(XXS)
+				font-size: 1em
+			@include respond-to(XXXS)
+				font-size: 1em
+		p
+			text-align: left
+			font-size: 1.2em
+			@include respond-to(XS)
+				font-size: 1em
+			@include respond-to(XXS)
+				font-size: 0.8em
+			@include respond-to(XXXS)
+				font-size: 0.6em
+	.conv_five_reason
+		h1
+			text-align: center
+			font-size: 2em
+			margin: 5% 0
+			@include respond-to(SM)
+				font-size: 1.7em
+			@include respond-to(XS)
+				font-size: 1.5em
+			@include respond-to(XXS)
+				font-size: 1em
+			@include respond-to(XXXS)
+				font-size: 1em
+		ul
+			// width: 95%
+			text-align: left
+			list-style-image: url("../img/conviction/qa.png")
+			li
+				// list-style-image: url("../img/conviction/qa.png")
+				margin: 5px 0
+				font-size: 1.2em
+				@include respond-to(SM)
+					font-size: 1em
+				@include respond-to(XS)
+					font-size: 1em
+				@include respond-to(XXS)
+					font-size: 0.8em
+				@include respond-to(XXXS)
+					font-size: 0.6em
+				span
+					font-size: 1.6em
+					color: rgb(232,49,43)
+					font-weight: bold
+					@include respond-to(SM)
+						font-size: 1.6em
+					@include respond-to(XS)
+						font-size: 1.4em
+					@include respond-to(XXS)
+						font-size: 1.2em
+					@include respond-to(XXXS)
+						font-size: 1em
+	.conv_count
+		h2
+			margin: 5% 0
+			@include respond-to(SM)
+				font-size: 1.7em
+			@include respond-to(XS)
+				font-size: 1.5em
+			@include respond-to(XXS)
+				font-size: 1em
+			@include respond-to(XXXS)
+				font-size: 1em
+			span
+				color: #E8312B
+					//----------------------------------- TIMER ---------------------
+.timer
+	width: 100%
+	margin-bottom: 20px
+	.time_cont
+		.timer_text
+			text-shadow: #000 0 0 2px 
+			font-size: 2em
+			width: 65%
+			margin-bottom: 20px
+			float: left
+			@include respond-to(SM)
+				font-size: 1.7em
+			@include respond-to(XS)
+				font-size: 1.5em
+			@include respond-to(XXS)
+				font-size: 1em
+			@include respond-to(XXXS)
+				font-size: 1em
+		.count_item
+			color: #fff
+			width: 140px
+			height: 90px
+			text-align: center
+			font-size: 4em
+			
+			// margin-left: 5%
+			background-color: #000
+			float: right
+			// @include respond-to(SM)
+			// 	position: absolute
+			// 	top: 0
+			// @include respond-to(XS)
+			// 	position: absolute
+			// 	top: 10%
+			// 	right: 10%
+			cursor: pointer
+			@include respond-to(XXS)
+				width: 100px
+				height: 90px
+				font-size: 3em
+
+			@include respond-to(XXXS)
+				width: 80px
+				height: 90px
+				font-size: 2em
+	.count_button
+		background-color: #FF000D
+		height: 90px
+		color: #fff
+		font-size: 3.5em
+		text-align: center
+		line-height: 90px
+		cursor: pointer
+		margin: 0 1%
+		@include respond-to(XXS)
+			font-size: 2em
+			margin: 0 1%
+		@include respond-to(XXXS)
+			font-size: 2em
+			margin: 0 1%
+
+//----------------------------------- TIMER END ---------------------	
+//---------------------------------------- SECTION 3 CONVICTION END -------------
+
+//-------------------------------------- SECTION 4 REVIEWS ---------------- 
+#Watch_Diesel_Buy_Reviews
+	background-image: url("../img/reviews/mouth.jpg")
+	background-position: center left
+	background-repeat: no-repeat
+	width: 100%
+	color: #fff
+	text-align: center
+	.rev_img
+		@include respond-to(XS)
+			width: 70%
+		@include respond-to(XXS)
+			width: 95%
+		@include respond-to(XXXS)
+			width: 95%
+	h1
+		font-size: 2em
+		// color: #000
+	.rev_cont
+		position: relative
+		width: 100%
+		h2
+			// color: #000
+			font-size: 2em
+			margin: 20px 0
+		p
+			font-size: 1.5em
+			margin: 0 3% 3% 	
+			color: #000
+			padding: 3%
+			@include respond-to(XS)
+				font-size: 1em
+			@include respond-to(XXS)
+				font-size: 1em
+			@include respond-to(XXXS)
+				font-size: 0.9em
+		img
+			position: absolute
+			top: 65%
+			right: 15%
+			@include respond-to(XS)
+				top: 70%
+			@include respond-to(XXS)
+				top: 80%
+			@include respond-to(XXXS)
+				top: 80%
+//-------------------------------------- SECTION 4 REVIEWS END ---------------- 
+
+//----------------------------------------- SECTION 5 HOW IT WORK --------------
+#howwork
+	background-color: #FFF
+	width: 100%
+	color: #fff
+	h1
+		font-size: 2em
+		color: #000
+		text-align: center	
+		margin-bottom: 10%
+		@include respond-to(XS)
+			font-size: 1.5em
+		@include respond-to(XXS)
+			font-size: 1.2em
+		@include respond-to(XXXS)
+			font-size: 1em
+	// .circle_row
+	// 	width: 100%
+	// 	height: 200px
+	// 	background-color: #000
+	// 	.circle_item
+	// 		width: 25%
+	// 		height: 100%
+	// 		background-color: green
+	.circle_row
+		width: 100%
+		height: 200px
+		margin-bottom: 100px
+		//height: 300px
+		text-align: center
+		//position: relative
+		// background-image: url("../img/arr.png")
+		// background-position: center center 
+		@include respond-to(XS)
+			margin-bottom: 50px
+		@include respond-to(XXS)
+			margin: 0
+			height: 150px
+		@include respond-to(XXXS)
+			margin: 0
+			height: 120px
+		li
+			color: #fff
+			display: inline-block
+			width: 18%
+			height: 100%
+			@include respond-to(SM)
+				width: 18%
+			@include respond-to(XS)
+				width: 80%
+				height: auto
+				font-size: 1.5em
+			@include respond-to(XXS)
+				width: 80%
+				height: auto
+				font-size: 1em
+			@include respond-to(XXXS)
+				width: 80%
+				height: auto
+				font-size: 0.8em
+			.circle
+				height: 100%
+				width: 100%
+				position: relative
+				background-color: #fff
+				.number
+					position: absolute
+					top: 0
+					width: 100%
+					color: #000
+					font-size: 3em
+					@include respond-to(XS)
+						font-size: 1em
+						text-align: left
+						margin-left: -3%
+
+					@include respond-to(XXS)
+						font-size: 1em
+						text-align: left
+						margin-left: -3%
+					@include respond-to(XXXS)
+						font-size: 1em
+						text-align: left
+						margin-left: -3%
+
+				p
+					position: absolute
+					top: 0
+					background-color: #5d7e32
+					padding: 65px 0 
+					border-radius: 90px
+					// background-image: url("../img/circle.png")
+					// box-shadow: 20px 20px 20px 20px #000
+					@include respond-to(SM)
+						padding: 58px 0 
+						border-radius: 90px
+					@include respond-to(XS)
+						position: relative
+						top: 0
+						padding: 0 
+						margin: 2%
+					@include respond-to(XXS)
+						position: relative
+						top: 0
+						margin: 1%
+						padding: 0 
+					@include respond-to(XXXS)
+						position: relative
+						top: 0
+						margin: 1%
+						padding: 0 
+			&:nth-child(even) .circle
+				.number
+					position: absolute
+					top: 70%
+					width: 100%
+					color: #000
+					font-size: 3em
+					@include respond-to(XS)
+						font-size: 1em
+						text-align: left
+						top: 0
+					@include respond-to(XXS)
+						font-size: 1em
+						text-align: left
+						top: 0
+					@include respond-to(XXXS)
+						font-size: 1em
+						text-align: left
+						top: 0
+				p
+					top: 70%
+					@include respond-to(XS)
+						position: relative
+						top: 0
+						padding: 0 
+					@include respond-to(XXS)
+						position: relative
+						top: 0
+						padding: 0 
+					@include respond-to(XXXS)
+						position: relative
+						top: 0
+						padding: 0 
+
+	.faq
+		color: #000
+		width: 70%	
+		margin: 0 auto
+		text-align: center
+		h2
+			font-size: 2em
+			@include respond-to(XS)
+				font-size: 1.5em
+			@include respond-to(XXS)
+				font-size: 1.2em
+			@include respond-to(XXXS)	
+				font-size: 1em
+		#clickme
+			display: none
+			width: 100px
+			height: 50px
+			margin: 0 auto 5px
+			background-color: rgb(232,49,43)
+			line-height: 50px
+			color: #fff
+			font-size: 1.2em
+			border-radius: 20px
+			cursor: pointer
+			@include respond-to(XS)
+				display: block
+			@include respond-to(XXS)
+				display: block
+			@include respond-to(XXXS)
+				display: block
+		.faq_box
+			@include respond-to(XS)
+				display: none
+			@include respond-to(XXS)
+				display: none
+			@include respond-to(XXXS)
+				display: none
+		h2
+			text-align: center
+			margin: 5% 0
+			font-size: 2em
+			color: #000
+		ul
+			margin-bottom: 2%
+			li
+				list-style-type: none
+				p
+					padding-bottom: 1%
+					text-align: left
+		p
+			margin-bottom: 2%			
+//----------------------------------------- SECTION 5 HOW IT WORK END --------------
+
+	
+
+
+//----------------------------------------- SECTION 6 DELIVERY --------------------
+#Watch_Diesel_Buy_Delivery
+	//padding: 0 10%
+	background-image: url("../img/section3/air.jpg")
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+	color: #000
+	max-width: 1900px
+	margin: 0 auto 
+.deliv_open
+	position: absolute 
+	top: 5%
+	right: 10% 
+	height: 60px
+	width: 50px	
+	background: rgb(232,49,43) url("../img/delivery/arr_down.png") no-repeat center center
+	display: none
+	border-radius: 20px
+	@include respond-to(XS)
+		display: block
+	@include respond-to(XXS)
+		display: block
+	@include respond-to(XXXS)
+		display: block
+	// display: none
+.delivery_list
+	background-color: rgba(255,255,255,0.8)
+	height: 100%
+	text-align: center
+	h3
+		margin: 2% 0
+	.delivery_PR
+		position: relative	
+		text-align: left
+		.delivery_pr_it
+			overflow: hidden
+			margin: 2% 5%
+			padding-left: 200px
+			background-image: url("../img/delivery/RP.png")
+			background-position: left center
+			background-repeat: no-repeat
+			@include respond-to(SM)
+				background-image: url("../img/delivery/RPm.png")
+				padding-left: 150px
+				margin: 2%
+			@include respond-to(XS)
+				background-image: url("../img/delivery/RPm.png")
+				padding: 80px 0 0 0 
+				background-position: top left
+				margin: 2%
+				height: 0
+			@include respond-to(XXS)
+				background-image: url("../img/delivery/RPm.png")
+				padding: 80px 0 0 0 
+				margin: 2%
+				font-size: 0.8em
+				background-position: top left
+				height: 0		
+			@include respond-to(XXXS)
+				background-image: url("../img/delivery/RPm.png")
+				padding: 80px 0 0 0 
+				background-position: top left
+				margin: 2%
+				font-size: 0.8em
+				height: 0
+			p
+				margin: 2%
+	.delivery_CDEK
+		position: relative
+		text-align: left
+		.delivery_cdek_it
+			overflow: hidden
+			margin: 2% 5%
+			padding-left: 200px
+			background-image: url("../img/delivery/cdek.png")
+			background-position: left center
+			background-repeat: no-repeat
+			@include respond-to(SM)
+				background-image: url("../img/delivery/cdekm.png")
+				padding-left: 150px
+				margin: 2%
+			@include respond-to(XS)
+				background-image: url("../img/delivery/cdekm.png")
+				padding: 50px 0 0 0 
+				background-position: top left
+				margin: 2%
+				height: 0
+			@include respond-to(XXS)
+				background-image: url("../img/delivery/cdekm.png")
+				padding: 50px 0 0 0 
+				background-position: top left
+				margin: 2%
+				height: 0
+				font-size: 0.8em
+			@include respond-to(XXXS)
+				background-image: url("../img/delivery/cdekm.png")
+				padding: 50px 0 0 0 
+				background-position: top left
+				margin: 2%
+				height: 0
+				font-size: 0.8em
+			p
+				margin: 2%
+
+//----------------------------------------- SECTION 6 DELIVERY --------------------
+
+//---------------------------SECTION--------------------
+.block_cont
+	width: 100%
+	height: 600px
+//--------------------------- SECTION FOOTER --------------------
+.form_bottom
+	// background-image: url("../img/section3/air.jpg")
+	// background-repeat: no-repeat
+	// background-position: top left
+	//background-size: cover
+	background-color: #FFF
+	color: #000
+	max-width: 1900px
+	margin: 0 auto 
+	// height: 600px
+	text-align: center
+	.form_text
+		p
+			margin-bottom: 2%
+		h1
+			// text-align: center
+			margin: 2% 0 0 2%
+			font-size: 3em
+	.form_form
+		width: 100%
+		position: relative
+		margin: 170px 20px 0 20px
+		.form_box
+			width: 50%
+			@include respond-to(XS)
+				width: 70%
+				margin: 0 auto
+			@include respond-to(XXS)
+				width: 80%
+				margin: 0 auto
+			@include respond-to(XXXS)
+				width: 90%
+				margin: 0 auto
+		@include respond-to(XS)
+			margin: 0
+		@include respond-to(XXS)
+			margin: 0
+		@include respond-to(XXXS)
+			margin: 0
+		.priceimg
+			width: 30%
+			position: absolute
+			top: -130%
+			right: 55%
+			@include respond-to(XS)
+				position: relative
+				top: -15%
+				right: 0
+			@include respond-to(XXS)
+				position: relative
+				top: -15%
+				right: 0
+				width: 50%
+			@include respond-to(XXXS)
+				position: relative
+				top: -15%
+				right: 0
+				width: 50%	
+		img
+			width: 30%
+			position: absolute
+			top: -130%
+			right: 10%
+			@include respond-to(XS)
+				right: 10px
+				top: 0%
+				position: relative
+			@include respond-to(XXS)
+				right: 0
+				top: 0%
+				position: relative
+				width: 40%
+			@include respond-to(XXXS)
+				right: 0%
+				top: 0%
+				position: relative
+				width: 40%	
+	.entity
+		p
+			width: 80%
+			margin: 5% auto 2%
+			border-top: 2px solid #000	
+
+//--------------------------- SECTION FOOTER END --------------------
+
+
+#popup_toggle
+	bottom: 25px
+	right: 10px
+	position: fixed
+.img-circle
+	background-color: #5d7e32
+	box-sizing: content-box
+	-webkit-box-sizing: content-box
+.circlephone
+	box-sizing: content-box
+	-webkit-box-sizing: content-box
+	border: 2px solid #5d7e32
+	width: 150px
+	height: 150px
+	bottom: -25px
+	right: 10px
+	position: absolute
+	-webkit-border-radius: 100%
+	-moz-border-radius: 100%
+	border-radius: 100%
+	opacity: .5
+	-webkit-animation: circle-anim 2.4s infinite ease-in-out !important
+	-moz-animation: circle-anim 2.4s infinite ease-in-out !important
+	-ms-animation: circle-anim 2.4s infinite ease-in-out !important
+	-o-animation: circle-anim 2.4s infinite ease-in-out !important
+	animation: circle-anim 2.4s infinite ease-in-out !important
+	-webkit-transition: all .5s;-moz-transition: all .5s
+	-o-transition: all .5s;transition: all 0.5s
+.circle-fill
+	box-sizing: content-box
+	-webkit-box-sizing: content-box
+	background-color: #5d7e32
+	width: 100px
+	height: 100px
+	bottom: 0px
+	right: 35px
+	position: absolute
+	-webkit-border-radius: 100%
+	-moz-border-radius: 100%
+	border-radius: 100%
+	border: 2px solid transparent
+	-webkit-animation: circle-fill-anim 2.3s infinite ease-in-out
+	-moz-animation: circle-fill-anim 2.3s infinite ease-in-out
+	-ms-animation: circle-fill-anim 2.3s infinite ease-in-out
+	-o-animation: circle-fill-anim 2.3s infinite ease-in-out
+	animation: circle-fill-anim 2.3s infinite ease-in-out
+	-webkit-transition: all .5s
+	-moz-transition: all .5s
+	-o-transition: all .5s
+	transition: all 0.5s
+.img-circle
+	box-sizing: content-box
+	-webkit-box-sizing: content-box
+	width: 72px
+	height: 72px
+	bottom: 14px
+	right: 49px
+	position: absolute
+	-webkit-border-radius: 100%
+	-moz-border-radius: 100%
+	border-radius: 100%
+	border: 2px solid transparent
+	opacity: .7
+.img-circleblock
+	box-sizing: content-box
+	-webkit-box-sizing: content-box
+	width: 72px
+	height: 72px
+	background-image: url(../img/mini.png)
+	background-position: center center
+	background-repeat: no-repeat
+	animation-name: tossing
+	-webkit-animation-name: tossing
+	animation-duration: 1.5s
+	-webkit-animation-duration: 1.5s
+	animation-iteration-count: infinite
+	-webkit-animation-iteration-count: infinite
+.img-circle:hover
+	opacity: 1
+@keyframes pulse 
+	0% 
+		transform: scale(0.9)
+		opacity: 1
+	50% 
+		transform: scale(1)
+		opacity: 1  
+	100% 
+		transform: scale(0.9)
+		opacity: 1
+@-webkit-keyframes pulse 
+	0% 
+		-webkit-transform: scale(0.95)
+		opacity: 1
+	50% 
+		-webkit-transform: scale(1)
+		opacity: 1   
+	100% 
+		-webkit-transform: scale(0.95)
+		opacity: 1
+@keyframes tossing 
+	0% 
+		transform: rotate(-8deg)
+	50% 
+		transform: rotate(8deg)
+	100% 
+		transform: rotate(-8deg)
+@-webkit-keyframes tossing 
+	0% 
+		-webkit-transform: rotate(-8deg)
+	50% 
+		-webkit-transform: rotate(8deg)
+	100% 
+		-webkit-transform: rotate(-8deg)
+@-moz-keyframes circle-anim 
+	0% 
+		-moz-transform: rotate(0deg) scale(0.5) skew(1deg)
+		opacity: .1
+		-moz-opacity: .1
+		-webkit-opacity: .1
+		-o-opacity: .1
+	30% 
+		-moz-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .5
+		-moz-opacity: .5
+		-webkit-opacity: .5
+		-o-opacity: .5
+	100% 
+		-moz-transform: rotate(0deg) scale(1) skew(1deg)
+		opacity: .6
+		-moz-opacity: .6
+		-webkit-opacity: .6
+		-o-opacity: .1
+@-webkit-keyframes circle-anim 
+	0% 
+		-webkit-transform: rotate(0deg) scale(0.5) skew(1deg)
+		-webkit-opacity: .1
+	30% 
+		-webkit-transform: rotate(0deg) scale(0.7) skew(1deg)
+		-webkit-opacity: .5
+	100% 
+		-webkit-transform: rotate(0deg) scale(1) skew(1deg)
+		-webkit-opacity: .1
+@-o-keyframes circle-anim 
+	0% 
+		-o-transform: rotate(0deg) kscale(0.5) skew(1deg)
+		-o-opacity: .1
+	30% 
+		-o-transform: rotate(0deg) scale(0.7) skew(1deg)
+		-o-opacity: .5
+	100% 
+		-o-transform: rotate(0deg) scale(1) skew(1deg)
+		-o-opacity: .1
+@keyframes circle-anim 
+	0% 
+		transform: rotate(0deg) scale(0.5) skew(1deg)
+		opacity: .1
+	30% 
+		transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .5
+	100% 
+		transform: rotate(0deg) scale(1) skew(1deg)
+	  	opacity: .1
+@-moz-keyframes circle-fill-anim 
+	0% 
+		-moz-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+	50% 
+		-moz-transform: rotate(0deg) -moz-scale(1) skew(1deg)
+		opacity: .2
+	100% 
+		-moz-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+@-webkit-keyframes circle-fill-anim 
+	0% 
+		-webkit-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+	50% 
+		-webkit-transform: rotate(0deg) scale(1) skew(1deg)
+		opacity: .2
+	100% 
+		-webkit-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+@-o-keyframes circle-fill-anim 
+	0% 
+		-o-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+	50% 
+		-o-transform: rotate(0deg) scale(1) skew(1deg)
+		opacity: .2
+	100% 
+		-o-transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+@keyframes circle-fill-anim 
+	0% 
+		transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2
+	50% 
+		transform: rotate(0deg) scale(1) skew(1deg)
+		opacity: .2
+	100% 
+		transform: rotate(0deg) scale(0.7) skew(1deg)
+		opacity: .2

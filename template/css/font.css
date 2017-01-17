@@ -1,0 +1,8 @@
+@font-face{
+font-family: 'Comfortaa';
+src: url('../font/Comfortaa.eot');
+src: url('../font/Comfortaa.eot?iefix') format('eot'),
+url('../font/Comfortaa.woff') format('woff'),
+url('../font/Comfortaa.ttf') format('truetype'),
+url('../font/Comfortaa.svg#webfont') format('svg');
+}
